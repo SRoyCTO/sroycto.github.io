@@ -1,2 +1,2 @@
-# SRoy-Portfolio
-Portfolio Website
+# sroycto.github.io
+SRoy's Website
