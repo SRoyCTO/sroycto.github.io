@@ -1,0 +1,484 @@
+@charset 'UTF-8';
+@import url('http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,600,900');
+@import url('font-awesome.min.css');
+
+/*
+	Focal Point by Pixelarity
+	pixelarity.com @pixelarity
+	License: pixelarity.com/license
+*/
+
+/*********************************************************************************/
+/* Basic                                                                         */
+/*********************************************************************************/
+
+	body
+	{
+		background: #fff url('images/bg01.png') repeat;
+		font-family: 'Source Sans Pro', sans-serif;
+		font-weight: 400;
+		color: #595959;
+	}
+
+	a
+	{
+		color: inherit;
+		text-decoration: underline;
+	}
+	
+		a:hover
+		{
+			text-decoration: none;
+		}
+
+	strong, b
+	{
+		font-weight: 600;
+	}
+	
+	em, i
+	{
+		font-style: italic;
+	}
+	
+	form
+	{
+	}
+	
+		form input.text,
+		form select,
+		form textarea
+		{
+			-webkit-appearance: none;
+		}
+			
+	br.clear
+	{
+		clear: both;
+	}
+	
+	h1, h2, h3
+	{
+		font-weight: 900;
+		color: #555;
+		text-transform: uppercase;
+	}
+	
+	h2
+	{
+		font-size: 1.40em;
+	}
+
+	p, ul, ol, dl, table
+	{
+		margin-bottom: 1em;
+	}
+	
+	p
+	{
+		line-height: 2em;
+	}
+	
+	section,
+	article
+	{
+		margin-bottom: 4em;
+	}
+	
+	section > :last-child,
+	article > :last-child
+	{
+		margin-bottom: 0;
+	}
+
+	section:last-child,
+	article:last-child
+	{
+		margin-bottom: 0;
+	}
+
+	header
+	{
+		margin-bottom: 2em;
+	}
+	
+		header .byline
+		{
+			display: block;
+			font-size: 1.2em;
+			margin: 1em 0 0 0;
+			padding-bottom: 0.5em;
+		}
+		
+	footer
+	{
+		margin-top: 2em;
+	}
+		
+	.centered
+	{
+		text-align: center;
+	}
+
+	.image
+	{
+		display: inline-block;
+		border-radius: 5px;
+	}
+	
+		.image img
+		{
+			display: block;
+			width: 100%;
+			border-radius: 5px;
+		}
+
+		.image.fit
+		{
+			display: block;
+			width: 100%;
+		}
+	
+		.image.featured
+		{
+			display: block;
+			width: 100%;
+			margin: 0 0 2em 0;
+		}
+		
+		.image.left
+		{
+			float: left;
+			margin: 0 2em 2em 0;
+		}
+		
+		.image.centered
+		{
+			display: block;
+			margin: 0 0 2em 0;
+		}
+
+			.image.centered img
+			{
+				margin: 0 auto;
+				width: auto;
+			}
+		
+	.button
+	{
+		display: inline-block;
+		background: #df6267;
+		border-radius: 5px;
+		text-align: center;
+		text-decoration: none;
+		color: #FFF;
+		font-weight: 600;
+		-moz-transition: background-color 0.25s ease-in-out;
+		-webkit-transition: background-color 0.25s ease-in-out;
+		-o-transition: background-color 0.25s ease-in-out;
+		-ms-transition: background-color 0.25s ease-in-out;
+		transition: background-color 0.25s ease-in-out;
+	}
+
+		.button:hover
+		{
+			background: #ef7277;
+		}
+		
+		.button:active
+		{
+			background: #cf5257;
+		}
+
+	ul.style1
+	{
+	}
+	
+		ul.style1 li
+		{
+			border-top: solid 1px #e5e5e5;
+			padding: 1em 0 1em 0;
+		}
+		
+			ul.style1 li:first-child
+			{
+				border-top: 0;
+				padding-top: 0;
+			}
+			
+		ul.style1 a
+		{
+			color: #595959;
+		}
+		
+		ul.style1 a:hover
+		{
+			text-decoration: none;
+		}
+			
+	.selectorr
+	{
+		margin-top: 3em;
+	}
+	
+		.selectorr .titles
+		{
+			overflow: hidden;
+			text-align: center;
+			margin-bottom: 3em;
+		}
+		
+			.selectorr .titles li
+			{
+				display: inline-block;
+				padding: 0.65em 1.25em;
+				text-decoration: none;
+				font-size: 1em;
+				outline: 0;
+			}
+
+				.selectorr .titles li.active
+				{
+					background: #555;
+					border-radius: 5px;
+					color: #FFF;
+					font-weight: 600;
+				}
+
+	ul.menu
+	{
+		overflow: hidden;
+		margin-top: 3em;
+		text-align: center;
+	}
+	
+		ul.menu li
+		{
+			display: inline-block;
+		}
+
+		ul.menu a
+		{
+			display: block;
+			padding: 0.70em 1.5em;
+			text-decoration: none;
+			font-size: 1em;
+			font-weight: 600;
+			outline: 0;
+			color: #595959;
+		}
+	
+		ul.menu .active a
+		{
+			background: #3f3f3f;
+			border-radius: 5px;
+			color: #FFF;
+		}
+
+	ul.contact
+	{
+		overflow:  hidden;
+		margin: 2em 0 1em 0;
+		padding-top: 1em;
+		text-align: center;
+	}
+	
+		ul.contact li
+		{
+			display: inline-block;
+			margin: 0 0.25em;
+			font-size: 1.2em;
+		}
+		
+		ul.contact li span
+		{
+			display: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		ul.contact li a
+		{
+			color: #FFF;
+		}
+		
+			ul.contact li a:before
+			{
+				display: inline-block;
+				background: #555;
+				border-radius: 100%;
+				width: 2em;
+				height: 2em;
+				line-height: 2em;
+				text-align: center;
+				color: #FFFFFF;
+				-moz-transition: background-color 0.25s ease-in-out;
+				-webkit-transition: background-color 0.25s ease-in-out;
+				-o-transition: background-color 0.25s ease-in-out;
+				-ms-transition: background-color 0.25s ease-in-out;
+				transition: background-color 0.25s ease-in-out;
+			}
+
+			ul.contact li a:hover:before
+			{
+				background: #777;
+			}
+
+			ul.contact li a:active:before
+			{
+				background: #444;
+			}
+
+/*********************************************************************************/
+/* Icons                                                                         */
+/*********************************************************************************/
+
+	.icon
+	{
+		text-decoration: none;
+	}
+
+		.icon:before
+		{
+			display: inline-block;
+			font-family: FontAwesome;
+			font-size: 1.25em;
+			text-decoration: none;
+			font-style: normal;
+			font-weight: normal;
+			line-height: 1;
+			-webkit-font-smoothing:antialiased;
+			-moz-osx-font-smoothing:grayscale;
+		}
+		
+		.icon > .label
+		{
+			display: none;
+		}
+
+/*********************************************************************************/
+/* Wrappers                                                                      */
+/*********************************************************************************/
+
+	.wrapper
+	{
+		position: relative;
+		border-bottom: 2px solid #e5e5e5;
+	}
+	
+	.wrapper:last-child
+	{
+		border-bottom: 0;
+	}
+
+/*********************************************************************************/
+/* Logo                                                                          */
+/*********************************************************************************/
+
+	#logo
+	{
+		display: inline-block;
+		text-decoration: none;
+	}
+
+		#logo .pennant
+		{
+			text-align: center;
+		}
+
+			#logo .pennant span
+			{
+				position: relative;
+				display: inline-block;
+				background: #df6267;
+				color: #FFF;
+				width: 3em;
+				height: 3em;
+				line-height: 3.2em;
+				border-radius: 100%;
+			}
+
+		#logo h1
+		{
+			text-transform: uppercase;
+			font-weight: 900;
+			color: #555;
+		}
+
+/*********************************************************************************/
+/* Banner                                                                        */
+/*********************************************************************************/
+
+	#banner
+	{
+		overflow: hidden;
+		text-align: center;
+	}
+	
+/*********************************************************************************/
+/* Footer                                                                        */
+/*********************************************************************************/
+
+	#footer
+	{
+		overflow: hidden;
+		text-align: center;
+	}
+
+/*********************************************************************************/
+/* Copyright                                                                     */
+/*********************************************************************************/
+
+	#copyright 
+	{
+		text-align: center;
+		color: #aaa;
+		border-top: 2px solid #e5e5e5;
+	}
+
+/*********************************************************************************/
+/* Portfolio                                                                     */
+/*********************************************************************************/
+
+	#portfolio-preview
+	{
+		position: relative;
+		overflow: hidden;
+		text-align: center;
+	}
+		
+	#portfolio-preview header
+	{
+	}
+	
+	.poptrox-popup
+	{
+		-moz-box-sizing: content-box;
+		-webkit-box-sizing: content-box;
+		-o-box-sizing: content-box;
+		-ms-box-sizing: content-box;
+		box-sizing: content-box;
+		background: #fff;
+	}
+	
+		.poptrox-popup .loader
+		{
+			text-indent: -9999px;
+			width: 48px;
+			height: 48px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin-left: -24px;
+			margin-top: -24px;
+			background: url('images/loader.gif');
+		}
+	
+/*********************************************************************************/
+/* Highlights                                                                    */
+/*********************************************************************************/
+
+	#highlights
+	{
+		text-align: center;
+	}

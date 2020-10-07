@@ -1,0 +1,52 @@
+/*
+	Focal Point by Pixelarity
+	pixelarity.com @pixelarity
+	License: pixelarity.com/license
+*/
+
+/*********************************************************************************/
+/* Basic                                                                         */
+/*********************************************************************************/
+
+	.image,
+	.image img,
+	.button,
+	.selectorr .titles li.active,
+	ul.menu .active a,
+	ul.contact li a:before
+	{
+		position: relative;
+		-ms-behavior: url('css/ie/PIE.htc');
+	}
+
+/*********************************************************************************/
+/* Logo                                                                          */
+/*********************************************************************************/
+
+	#logo .pennant span
+	{
+		position: relative;
+		-ms-behavior: url('css/ie/PIE.htc');
+	}
+
+/*********************************************************************************/
+/* Nav                                                                           */
+/*********************************************************************************/
+
+	#nav > ul > li > a,
+	#nav > ul > li > span,
+	.dropotron
+	{
+		position: relative;
+		-ms-behavior: url('css/ie/PIE.htc');
+	}
+	
+/*********************************************************************************/
+/* Portfolio                                                                     */
+/*********************************************************************************/
+
+	.poptrox-popup,
+	.poptrox-popup .closer
+	{
+		-ms-behavior: url('css/ie/PIE.htc');
+	}

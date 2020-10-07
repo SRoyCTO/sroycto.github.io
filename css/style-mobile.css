@@ -1,0 +1,401 @@
+/*
+	Focal Point by Pixelarity
+	pixelarity.com @pixelarity
+	License: pixelarity.com/license
+*/
+
+/*********************************************************************************/
+/* Basic                                                                         */
+/*********************************************************************************/
+
+	body
+	{
+		line-height: 1.75em;
+		font-size: 11pt;
+	}
+
+	header, h2, h3, h4, h5, h6
+	{
+		text-align: center;
+	}
+
+	p
+	{
+		text-align: justify;
+	}
+
+	h2
+	{
+		font-size: 1.2em;
+		line-height: 1.5em;
+	}
+
+	section,
+	article
+	{
+		clear: both;
+		margin: 3em 0 3em 0 !important;
+	}
+
+	section > :first-child,
+	article > :first-child
+	{
+		margin-top: 0 !important;
+	}
+
+	section:first-child,
+	article:first-child
+	{
+		margin-top: 0 !important;
+	}
+
+	section:last-child,
+	article:last-child
+	{
+		margin-bottom: 0 !important;
+	}
+
+	.button
+	{
+		display: block;
+		padding: 0 1em;
+		line-height: 3em;
+		text-align: center;
+	}
+
+	ul.menu
+	{
+	}
+	
+		ul.menu li
+		{
+			display: block;
+			margin-bottom: 5px;
+		}
+
+	ul.contact
+	{
+	}
+
+		ul.contact li
+		{
+			margin: 0 0.15em;
+		}
+
+			ul.contact li a:before
+			{
+				width: 2em;
+				height: 2em;
+				line-height: 2em;
+			}
+
+	.selectorr
+	{
+	}
+	
+		.selectorr .titles
+		{
+		}
+		
+			.selectorr .titles li
+			{
+				display: block;
+			}
+
+/*********************************************************************************/
+/* Mobile UI                                                                     */
+/*********************************************************************************/
+
+	#titleBar
+	{
+		background: none;
+	}
+
+		#titleBar .title
+		{
+			display: none;
+		}
+
+		#titleBar .toggle
+		{
+			position: absolute;
+			top: 0;
+			left: 0;
+			text-indent: -999px;
+			width: 60px;
+			height: 44px;
+		}
+
+			#titleBar .toggle:before
+			{
+				content: '';
+				position: absolute;
+				top: 6px;
+				left: 6px;
+				display: block;
+				width: 54px;
+				height: 38px;
+				background-color: rgba(92,95,103,0.5);
+				border-radius: 0.25em;
+				-moz-transition: all .15s ease-in-out;
+				-webkit-transition: all .15s ease-in-out;
+				-o-transition: all .15s ease-in-out;
+				-ms-transition: all .15s ease-in-out;
+				transition: all .15s ease-in-out;
+			}
+
+			#titleBar .toggle:after
+			{
+				content: '';
+				display: block;
+				width: 44px;
+				height: 44px;
+				position: absolute;
+				left: 15px;
+				top: 6px;
+				background: url('images/toggle.svg') 8px 14px no-repeat;
+				opacity: 0.5;
+			}
+
+			#titleBar .toggle:active:before
+			{
+				background-color: rgba(92,95,103,0.75);
+			}
+
+	#navPanel
+	{
+		background: #444 url('images/overlay.png');
+		box-shadow: inset -3px 0px 4px 0px rgba(0,0,0,0.1);
+	}
+
+		#navPanel .link
+		{
+			display: block;
+			color: rgba(255,255,255,0.5);
+			text-decoration: none;
+			font-size: 1em;
+			text-decoration: none;
+			height: 44px;
+			line-height: 44px;
+			border-top: solid 1px rgba(255,255,255,0.05);
+			margin: 0 15px 0 15px;
+		}
+	
+		#navPanel .link:first-child
+		{
+			border-top: 0;
+		}
+
+		#navPanel .indent-1 { display: inline-block; width: 1em; }
+		#navPanel .indent-2 { display: inline-block; width: 2em; }
+		#navPanel .indent-3 { display: inline-block; width: 3em; }
+		#navPanel .indent-4 { display: inline-block; width: 4em; }
+		#navPanel .indent-5 { display: inline-block; width: 5em; }
+		#navPanel .depth-0 { color: #fff; }
+
+/*********************************************************************************/
+/* Wrappers                                                                      */
+/*********************************************************************************/
+
+	.wrapper
+	{
+		margin: 0 15px 0 15px;
+		padding: 4em 0 4em 0;
+	}
+
+	#header-wrapper
+	{
+		padding: 3em 0;
+	}
+
+/*********************************************************************************/
+/* Header                                                                        */
+/*********************************************************************************/
+
+	#header
+	{
+		position: relative;
+		text-align: center;
+	}
+
+/*********************************************************************************/
+/* Logo                                                                          */
+/*********************************************************************************/
+
+	#logo
+	{
+		text-align: center;
+		padding: 0 1em;
+		display: block;
+	}
+	
+		#logo .pennant
+		{
+			font-size: 1.25em;
+			display: block;
+			margin: 0 0 1em 0;
+		}
+	
+		#logo h1
+		{
+			display: block;
+			letter-spacing: 0.1em;
+			font-size: 1.75em;
+			line-height: 1.25em;
+		}
+
+/*********************************************************************************/
+/* Nav                                                                           */
+/*********************************************************************************/
+
+	#nav
+	{
+		display: none;
+	}
+	
+/*********************************************************************************/
+/* Banner                                                                        */
+/*********************************************************************************/
+
+	#banner
+	{
+		overflow: hidden;
+		text-align: center;
+		padding: 0 2em 0 2em;
+	}
+	
+		#banner h2
+		{
+			margin-bottom: 1.5em;
+			font-size: 1.5em
+		}
+		
+		#banner p
+		{
+			font-size: 1.1em;
+			text-align: center;
+		}
+
+/*********************************************************************************/
+/* Content                                                                       */
+/*********************************************************************************/
+
+	#content
+	{
+	}
+	
+	.no-sidebar #content
+	{
+	}
+
+		#content header
+		{
+			margin-bottom: 1.5em;
+		}
+		
+		#content header h2
+		{
+			font-size: 1.4em;
+		}
+		
+		#content header .byline
+		{
+			font-size: 1.20em !important;
+		}
+
+		#content h3
+		{
+			margin: 3em 0em 1.5em 0em;
+			font-size: 1.2em;
+		}
+		
+		#content .image-full
+		{
+			margin-bottom: 2em;
+		}
+
+
+/*********************************************************************************/
+/* Sidebar                                                                       */
+/*********************************************************************************/
+
+	#sidebar
+	{
+		padding-top: 2em;
+	}
+
+/*********************************************************************************/
+/* Footer                                                                        */
+/*********************************************************************************/
+
+	#footer
+	{
+	}
+
+/*********************************************************************************/
+/* Copyright                                                                     */
+/*********************************************************************************/
+
+	#copyright
+	{
+		padding: 3em 2em 1.5em 2em;
+	}
+		
+/*********************************************************************************/
+/* Portfolio                                                                     */
+/*********************************************************************************/
+
+	#portfolio-preview
+	{
+		overflow: hidden;
+	}
+
+		#portfolio-preview header h2
+		{
+			font-size: 1.6em;
+		}
+		
+		#portfolio-preview .content
+		{
+			padding: 0em 1em 0em 1em;
+		}
+
+		#portfolio-preview article,
+		#portfolio-preview section
+		{
+			margin-bottom: 15px !important;
+		}
+
+		#portfolio-preview header .byline
+		{
+			font-size: 1.2em;
+		}
+
+	.poptrox-popup
+	{
+		border: solid 3px #fff;
+		border-radius: 5px;
+	}
+
+		.poptrox-popup .closer
+		{
+			display: none;
+		}
+
+/*********************************************************************************/
+/* Highlights                                                                    */
+/*********************************************************************************/
+
+	#highlights
+	{
+	}
+
+		#highlights section
+		{
+			margin-top: 3em !important;
+		}
+		
+		#highlights section.first
+		{
+			margin-top: 0 !important;
+		}
